@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="20dp">
+
+    <View
+        android:id="@+id/divider"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="?android:attr/listDivider" />
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+        <View
+            android:id="@+id/divider12"
+            android:layout_width="1dp"
+            android:layout_height="100dp"
+            android:background="?android:attr/listDivider" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:weightSum="100">
+            <TextView
+                android:id="@+id/name"
+                android:gravity="start|center_vertical"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:layout_weight="80"
+                android:text="Name"
+                android:textStyle="bold"
+                android:padding="25dp"
+                android:textSize="22dp"
+                android:textColor="#4CAF50"/>
+            <View
+                android:id="@+id/divider1223"
+                android:layout_width="1dp"
+                android:layout_height="100dp"
+                android:background="?android:attr/listDivider" />
+            <ImageButton
+                android:layout_width="100dp"
+                android:background="@color/white"
+                android:layout_height="match_parent"
+                android:layout_weight="20"
+                android:src="@drawable/trash"
+                android:id="@+id/delete_row"
+
+                />
+            <View
+                android:id="@+id/divider122"
+                android:layout_width="1dp"
+                android:layout_height="100dp"
+                android:background="?android:attr/listDivider" />
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+    <View
+        android:id="@+id/divider2"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+
+        android:background="?android:attr/listDivider" />
+</LinearLayout>
